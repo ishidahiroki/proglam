@@ -9,21 +9,37 @@ public class Janken {
 		int mynumber = new java.util.Scanner(System.in).nextInt();
 		int enemy = new java.util.Random().nextInt(3);
 		
-		if(mynumber == enemy) {
-			System.out.println("自分:" + mynumber);
-			System.out.println("相手:" + enemy);
-			System.out.println("結果: draw");
+		String result = "";
+		if(myNumber == 0) {
+			if(enemy == 1) {
+				result = "Win!!";
+			}else if(enemy == 2) {
+				result = "lose...";
+			}else if(enemy == 0) {
+				result = "draw";
+			}
+		}else if(myNumber == 1) {
+			if(enemy == 1) {
+				result = "draw";
+			}else if(enemy == 2) {
+				result = "Win!!";
+			}else if(enemy == 0) {
+				result = "lose...";
+			}
+		}else if(myNumber == 2) {
+			if(enemy == 1) {
+				result = "lose...";
+			}else if(enemy == 2) {
+				result = "draw";
+			}else if(enemy == 0) {
+				result = "Win!!";
+			}
+		}else {
+			result = "入力値が不正です。";
 		}
-		if(mynumber == enemy-1 || mynumber == enemy+2){
-			System.out.println("自分:" + mynumber);
-			System.out.println("相手:" + enemy);
-			System.out.println("結果: Win!!");
-		}
-		if(mynumber == enemy+1 || mynumber == enemy-2) {
-			System.out.println("自分:" + mynumber);
-			System.out.println("相手:" + enemy);
-			System.out.println("結果: lose...");
-		}
+		System.out.println("自分:" + myNumber);
+		System.out.println("相手:" + enemy);
+		System.out.println("結果:" + result);
 	}
 
 }
