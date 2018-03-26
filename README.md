@@ -4,7 +4,7 @@ S~Dまでの個数を入力することで小数第2位までのGPAを表示さ�
 (プログラムはこちらhttps://github.com/ishidahiroki/proglam/blob/master/GPA.java)
 
 # Factorial.java
-このプログラムは非負の整数の階乗値を返すプログラムです。負の値が入力された時はエラーを返し、正の値が入力された時は階乗値を返します。
+このプログラムは非負の整数の階乗値を返すプログラムです。負の値が入力された時はエラーを返し、正の値が入力された時は階乗値を返します。(プログラムはこちらhttps://github.com/ishidahiroki/proglam/blob/master/Factorial.java)
 
 # sample.html
 初めてhtmlファイルを作るにあたって基本中の基本となるタグを理解するために作ったものです(html 1作目)。このファイルでは必要最低限のhtml、bodyタグの他に基本的なタグを用いて制作しています。
